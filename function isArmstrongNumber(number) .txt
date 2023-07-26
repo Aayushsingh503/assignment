@@ -1,0 +1,12 @@
+function isArmstrongNumber(number) {
+  var numStr = number.toString();
+  var numDigits = numStr.length;
+
+  let sum = 0;
+  for (let i = 0; i < numDigits; i++) {
+    var digit = parseInt(numStr[i], 10); 
+    sum += Math.pow(digit, numDigits);
+  }
+  return sum === number;
+}
+console.log(isArmstrongNumber(153));

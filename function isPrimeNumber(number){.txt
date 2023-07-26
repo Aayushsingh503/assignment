@@ -1,0 +1,16 @@
+function isPrimeNumber(number){
+    if (number<2){
+        return false;
+    }
+        for (let i = 2; i < Math.sqrt(number); i++) {
+            if (number % i ==0) {
+                return false;
+                
+            }
+        }
+        return true;
+}
+console.log(isPrimeNumber(5));    // true, as 5 is a prime number
+console.log(isPrimeNumber(13));   // true, as 13 is a prime number
+console.log(isPrimeNumber(25));   // false, as 25 is not a prime number
+console.log(isPrimeNumber(100));
