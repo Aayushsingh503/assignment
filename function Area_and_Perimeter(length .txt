@@ -1,0 +1,6 @@
+function Area_and_Perimeter(length = 0 ,breadth = 0){
+    var length = parseInt(prompt("enter length"));
+    var breadth = parseInt(prompt("enter breadth"));
+    console.log(`area of a rectangle is : ${length*breadth}`);
+    console.log(`perimeter of  a rectangle is : ${2*(length+breadth)}`);
+}

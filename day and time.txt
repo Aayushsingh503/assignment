@@ -1,0 +1,8 @@
+var days={0:"Sunday",1:"Monday",2:"Tuesday",3:"Wednesday",4:"Thursday",5:"Friday",6:"Saturday"}
+const d = new Date();
+let Day = d.getDay();
+let Hour = d.getHours();
+let Minute = d.getMinutes();
+let Second = d.getSeconds();
+console.log(`Today is : ${days[Day]}`);
+console.log(`Current Time is ${Hour} : ${Minute} : ${Second}`);
